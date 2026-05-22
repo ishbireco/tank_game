@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ctxflko8n4oyj"]
+
+[ext_resource type="Script" uid="uid://bl4e14xt6v76" path="res://tank.gd" id="1_6lwfj"]
+[ext_resource type="Texture2D" uid="uid://dtl6fwyy1q0ml" path="res://muzzel.png" id="2_1ealj"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_a62es"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_how3p"]
+size = Vector2(40, 41)
+
+[node name="tank" type="CharacterBody2D" unique_id=1742202580]
+script = ExtResource("1_6lwfj")
+
+[node name="body" type="Sprite2D" parent="." unique_id=689713351]
+position = Vector2(20, 20.5)
+scale = Vector2(40, 41)
+texture = SubResource("CanvasTexture_a62es")
+
+[node name="muzzel" type="Sprite2D" parent="body" unique_id=155823656]
+texture_filter = 1
+position = Vector2(0, -0.08536589)
+scale = Vector2(0.025, 0.025)
+texture = ExtResource("2_1ealj")
+offset = Vector2(0, -15.6097555)
+
+[node name="shotMark" type="Marker2D" parent="body/muzzel" unique_id=302415775]
+position = Vector2(0, -29.268291)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1841375405]
+position = Vector2(20, 20.5)
+shape = SubResource("RectangleShape2D_how3p")
