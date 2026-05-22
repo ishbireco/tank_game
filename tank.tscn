@@ -23,9 +23,6 @@ scale = Vector2(0.025, 0.025)
 texture = ExtResource("2_1ealj")
 offset = Vector2(0, -15.6097555)
 
-[node name="shotMark" type="Marker2D" parent="body/muzzel" unique_id=302415775]
-position = Vector2(0, -29.268291)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1841375405]
 position = Vector2(20, 20.5)
 shape = SubResource("RectangleShape2D_how3p")
