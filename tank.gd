@@ -25,5 +25,5 @@ func spawn_and_shoot_shot():
 	var new_shot = shot.instantiate()
 	get_parent().add_child(new_shot)
 	new_shot.global_position = shotMark.global_position
-	
+	new_shot.rotation = muzzel.rotation
 	
