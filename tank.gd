@@ -23,5 +23,5 @@ func shoot_timer():
 		shot_inst.rotation = muzzel.rotation
 		can_shoot = false
 	
-	await get_tree().create_timer(0.3).timeout
+	await get_tree().create_timer(0.6).timeout
 	can_shoot = true

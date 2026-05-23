@@ -1,24 +1,28 @@
 [gd_scene format=3 uid="uid://cp4htwds0r65v"]
 
+[ext_resource type="Script" uid="uid://t4twusepypv" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://ctxflko8n4oyj" path="res://tank.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://cvvckqy5mmv31" path="res://enemy_tank.tscn" id="2_0xm2m"]
 
 [node name="main" type="Node2D" unique_id=1234188863]
+script = ExtResource("1_0xm2m")
 
 [node name="tank" parent="." unique_id=1742202580 instance=ExtResource("1_ig7tw")]
 position = Vector2(304, 319)
 
 [node name="Marker1" type="Marker2D" parent="." unique_id=1255273512 groups=["spawn_points"]]
-position = Vector2(84, -108)
+position = Vector2(61, -87)
 
 [node name="Marker2" type="Marker2D" parent="." unique_id=1679504405 groups=["spawn_points"]]
-position = Vector2(217, -108)
+position = Vector2(222, -90)
 
 [node name="Marker3" type="Marker2D" parent="." unique_id=839450679 groups=["spawn_points"]]
-position = Vector2(362, -108)
+position = Vector2(424, -89)
 
 [node name="Marker4" type="Marker2D" parent="." unique_id=1898553426 groups=["spawn_points"]]
-position = Vector2(541, -108)
+position = Vector2(590, -90)
 
-[node name="enemy_tank" parent="." unique_id=403136333 instance=ExtResource("2_0xm2m")]
-position = Vector2(-4, -25)
+[node name="Marker5" type="Marker2D" parent="." unique_id=1778626000 groups=["spawn_points"]]
+position = Vector2(752, 30)
+
+[node name="Marker6" type="Marker2D" parent="." unique_id=2113478723 groups=["spawn_points"]]
+position = Vector2(-47, 31)
