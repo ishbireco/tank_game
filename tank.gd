@@ -2,7 +2,8 @@ extends CharacterBody2D
 
 @onready var muzzel = $body/muzzel
 @onready var shot = preload("res://shot.tscn")
-var can_shoot = true
+var can_shoot : bool
+@onready var sheild = $Area2D
 
 #movement mechanic
 
@@ -12,8 +13,10 @@ func _process(delta: float) -> void:
 	
 	muzzel.rotation_degrees = clamp(muzzel.rotation_degrees,-50,50)
 	
-	if Input.is_action_pressed("shoot") and can_shoot == true:
+	if Input.is_action_pressed("shoot"):
+		shield_check()
 		shoot_timer()
+		
 		
 func shoot_timer():
 	if can_shoot == true and Input.is_action_pressed("shoot"):
@@ -26,7 +29,10 @@ func shoot_timer():
 	await get_tree().create_timer(0.6).timeout
 	can_shoot = true
 	
-		
-		
+func shield_check():
+	if sheild.visible == true:
+		can_shoot = false
+	elif sheild.visible == false:
+		can_shoot = true
 		
 		

@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://2vmp2djhlwdx"]
+
+[ext_resource type="Script" uid="uid://dj8o1hsmtmynb" path="res://death_menu.gd" id="1_dhhda"]
+
+[node name="death_menu" type="Control" unique_id=571110247]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dhhda")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1540965970]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.5
+offset_top = -96.0
+offset_right = 149.5
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 50
+theme_override_font_sizes/bold_font_size = 50
+bbcode_enabled = true
+text = "[b][color=#8B0000][shake rate=40 level=20]YOU DIED[/shake][/color][/b]"
+
+[node name="Button" type="Button" parent="." unique_id=1996680865]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.0
+offset_top = -4.0
+offset_right = 56.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.7074286, 0.97869855, 0, 1)
+theme_override_font_sizes/font_size = 27
+text = "RETRY"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

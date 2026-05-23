@@ -2,13 +2,16 @@
 
 [ext_resource type="Script" uid="uid://bl4e14xt6v76" path="res://tank.gd" id="1_6lwfj"]
 [ext_resource type="Texture2D" uid="uid://dtl6fwyy1q0ml" path="res://muzzel.png" id="2_1ealj"]
+[ext_resource type="PackedScene" uid="uid://dtnk4rhd3vgqj" path="res://shield.tscn" id="3_a62es"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_a62es"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_how3p"]
 size = Vector2(40, 41)
 
-[node name="tank" type="CharacterBody2D" unique_id=1742202580]
+[node name="tank" type="CharacterBody2D" unique_id=1742202580 groups=["player"]]
+collision_layer = 4
+collision_mask = 4
 script = ExtResource("1_6lwfj")
 
 [node name="body" type="Sprite2D" parent="." unique_id=689713351]
@@ -26,3 +29,6 @@ offset = Vector2(0, -15.6097555)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1841375405]
 position = Vector2(20, 20.5)
 shape = SubResource("RectangleShape2D_how3p")
+
+[node name="Area2D" parent="." unique_id=249375216 instance=ExtResource("3_a62es")]
+position = Vector2(20, -17)

@@ -31,4 +31,7 @@ func _process(delta):
 	
 	if can_shoot == true:
 		shoot()
+
+		
+
 	
