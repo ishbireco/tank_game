@@ -8,5 +8,17 @@
 [node name="tank" parent="." unique_id=1742202580 instance=ExtResource("1_ig7tw")]
 position = Vector2(304, 319)
 
+[node name="Marker1" type="Marker2D" parent="." unique_id=1255273512 groups=["spawn_points"]]
+position = Vector2(84, -108)
+
+[node name="Marker2" type="Marker2D" parent="." unique_id=1679504405 groups=["spawn_points"]]
+position = Vector2(217, -108)
+
+[node name="Marker3" type="Marker2D" parent="." unique_id=839450679 groups=["spawn_points"]]
+position = Vector2(362, -108)
+
+[node name="Marker4" type="Marker2D" parent="." unique_id=1898553426 groups=["spawn_points"]]
+position = Vector2(541, -108)
+
 [node name="enemy_tank" parent="." unique_id=403136333 instance=ExtResource("2_0xm2m")]
-position = Vector2(325, 29)
+position = Vector2(-4, -25)
