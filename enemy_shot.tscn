@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cwj5xnojifdoj"]
+
+[ext_resource type="Texture2D" uid="uid://ndlbksm5vtjq" path="res://enemy_shot.png" id="1_1n0ci"]
+[ext_resource type="Script" uid="uid://cvwcxfx4gydds" path="res://enemy_shot.gd" id="1_7dn4v"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7dn4v"]
+radius = 4.0
+
+[node name="Area2D" type="Area2D" unique_id=1868851963]
+script = ExtResource("1_7dn4v")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=693218091]
+texture = ExtResource("1_1n0ci")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=697396945]
+shape = SubResource("CircleShape2D_7dn4v")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=950850041]
+rect = Rect2(-4, -4, 8, 8)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

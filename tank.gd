@@ -25,3 +25,8 @@ func shoot_timer():
 	
 	await get_tree().create_timer(0.6).timeout
 	can_shoot = true
+	
+		
+		
+		
+		

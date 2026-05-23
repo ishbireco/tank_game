@@ -6,7 +6,7 @@ var enemy_tank = preload("res://enemy_tank.tscn")
 func spawn_on_timer():
 	var timer = Timer.new()
 	add_child(timer)
-	timer.wait_time = 0.5
+	timer.wait_time = 1.5
 	timer.one_shot = false
 	timer.timeout.connect(spawn_on_random_marker)
 	timer.start()

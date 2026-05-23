@@ -18,4 +18,8 @@ texture = ExtResource("1_awion")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1006246708]
 shape = SubResource("CircleShape2D_3ldfn")
 
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1288626362]
+rect = Rect2(-4, -4, 8, 8)
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
