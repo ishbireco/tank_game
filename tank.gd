@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var muzzel = $body/muzzel
 @onready var shot = preload("res://shot.tscn")
+var can_shoot = true
 
 #movement mechanic
 
@@ -11,8 +12,16 @@ func _process(delta: float) -> void:
 	
 	muzzel.rotation_degrees = clamp(muzzel.rotation_degrees,-50,50)
 	
-	if Input.is_action_pressed("shoot"):
+	if Input.is_action_pressed("shoot") and can_shoot == true:
+		shoot_timer()
+		
+func shoot_timer():
+	if can_shoot == true and Input.is_action_pressed("shoot"):
 		var shot_inst = shot.instantiate()
 		get_tree().root.add_child(shot_inst)
 		shot_inst.global_position = muzzel.global_position
 		shot_inst.rotation = muzzel.rotation
+		can_shoot = false
+	
+	await get_tree().create_timer(0.3).timeout
+	can_shoot = true

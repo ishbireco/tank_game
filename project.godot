@@ -21,6 +21,10 @@ window/size/viewport_width=640
 window/size/viewport_height=360
 window/stretch/mode="canvas_items"
 
+[global_group]
+
+enemy=""
+
 [input]
 
 shoot={
@@ -29,10 +33,17 @@ shoot={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="tank"
+2d_physics/layer_2="enemy"
+2d_physics/layer_3="shot"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
