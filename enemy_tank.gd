@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var enemy_bullet = preload("res://enemy_shot.tscn")
 var can_shoot = true
 
+	
 func shoot():
 	if can_shoot == true:
 		var bullet_inst = enemy_bullet.instantiate()
@@ -29,6 +30,6 @@ func _process(delta):
 	
 	if can_shoot == true:
 		shoot()
-
+		
 
 	

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://t4twusepypv" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://ctxflko8n4oyj" path="res://tank.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://cvv57gebis2fu" path="res://score_coutn.gd" id="3_h2yge"]
 
 [node name="main" type="Node2D" unique_id=1234188863]
 script = ExtResource("1_0xm2m")
@@ -26,3 +27,9 @@ position = Vector2(-47, 31)
 
 [node name="tank" parent="." unique_id=1742202580 instance=ExtResource("1_ig7tw")]
 position = Vector2(305, 319)
+
+[node name="score_coutn" type="Label" parent="." unique_id=806145797]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 30
+script = ExtResource("3_h2yge")
