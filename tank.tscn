@@ -31,4 +31,4 @@ position = Vector2(20, 20.5)
 shape = SubResource("RectangleShape2D_how3p")
 
 [node name="Area2D" parent="." unique_id=249375216 instance=ExtResource("3_a62es")]
-position = Vector2(20, -17)
+position = Vector2(20, 9)

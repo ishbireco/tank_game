@@ -47,6 +47,7 @@ shield={
 2d_physics/layer_3="shot"
 2d_physics/layer_4="enemy_shot"
 2d_physics/layer_5="shield"
+2d_physics/layer_6="stay_"
 
 [physics]
 

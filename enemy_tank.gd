@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
 @onready var muzzel = $body/muzzel
-@onready var tank = null
 @onready var enemy = preload("res://enemy_tank.tscn")
 @export var speed = 100
 @export var enemy_bullet = preload("res://enemy_shot.tscn")
@@ -18,10 +17,9 @@ func shoot():
 	await  get_tree().create_timer(2).timeout
 	can_shoot = true
 
-func _ready():
-	tank = get_tree().root.find_child("tank", true, false)
-
 func _process(delta):
+	var real_tank = get_tree().get_nodes_in_group("player")
+	var tank = real_tank[0]
 	muzzel.look_at(tank.global_position)
 	muzzel.rotation += 3.14/2
 	
@@ -32,6 +30,5 @@ func _process(delta):
 	if can_shoot == true:
 		shoot()
 
-		
 
 	
