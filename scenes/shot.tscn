@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dci6o40qjyd1m"]
 
-[ext_resource type="Script" uid="uid://behygar1hs4v5" path="res://shot.gd" id="1_3ldfn"]
-[ext_resource type="Texture2D" uid="uid://bxc1pgjl6vo32" path="res://shot.png" id="1_awion"]
+[ext_resource type="Script" uid="uid://behygar1hs4v5" path="res://scripts/shot.gd" id="1_3ldfn"]
+[ext_resource type="Texture2D" uid="uid://bxc1pgjl6vo32" path="res://sprites/shot.png" id="1_awion"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3ldfn"]
 radius = 4.0

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var muzzel = $body/muzzel
-@onready var shot = preload("res://shot.tscn")
+@onready var shot = preload("res://scenes/shot.tscn")
 var can_shoot = true
 @onready var sheild = $Area2D
 

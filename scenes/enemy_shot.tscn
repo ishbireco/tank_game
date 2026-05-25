@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cwj5xnojifdoj"]
 
-[ext_resource type="Texture2D" uid="uid://ndlbksm5vtjq" path="res://enemy_shot.png" id="1_1n0ci"]
-[ext_resource type="Script" uid="uid://cvwcxfx4gydds" path="res://enemy_shot.gd" id="1_7dn4v"]
+[ext_resource type="Texture2D" uid="uid://ndlbksm5vtjq" path="res://sprites/enemy_shot.png" id="1_1n0ci"]
+[ext_resource type="Script" uid="uid://cvwcxfx4gydds" path="res://scripts/enemy_shot.gd" id="1_7dn4v"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7dn4v"]
 radius = 4.0

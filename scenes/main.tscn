@@ -1,11 +1,16 @@
 [gd_scene format=3 uid="uid://cp4htwds0r65v"]
 
-[ext_resource type="Script" uid="uid://t4twusepypv" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://ctxflko8n4oyj" path="res://tank.tscn" id="1_ig7tw"]
-[ext_resource type="Script" uid="uid://cvv57gebis2fu" path="res://score_coutn.gd" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://t4twusepypv" path="res://scripts/main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://ctxflko8n4oyj" path="res://scenes/tank.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://cvv57gebis2fu" path="res://scripts/score_coutn.gd" id="3_h2yge"]
+
+[sub_resource type="Curve" id="Curve_sugp2"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.012395024), -2.8177485, 0.0, 0, 0]
+point_count = 2
 
 [node name="main" type="Node2D" unique_id=1234188863]
 script = ExtResource("1_0xm2m")
+time_curve = SubResource("Curve_sugp2")
 
 [node name="Marker1" type="Marker2D" parent="." unique_id=1255273512 groups=["spawn_points"]]
 position = Vector2(61, -87)

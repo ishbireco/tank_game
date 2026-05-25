@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://ctxflko8n4oyj"]
 
-[ext_resource type="Script" uid="uid://bl4e14xt6v76" path="res://tank.gd" id="1_6lwfj"]
-[ext_resource type="Texture2D" uid="uid://dtl6fwyy1q0ml" path="res://muzzel.png" id="2_1ealj"]
-[ext_resource type="PackedScene" uid="uid://dtnk4rhd3vgqj" path="res://shield.tscn" id="3_a62es"]
-[ext_resource type="PackedScene" uid="uid://badwaqd4c2pfr" path="res://stay away.tscn" id="4_yfqcd"]
+[ext_resource type="Script" uid="uid://bl4e14xt6v76" path="res://scripts/tank.gd" id="1_6lwfj"]
+[ext_resource type="Texture2D" uid="uid://dtl6fwyy1q0ml" path="res://sprites/muzzel.png" id="2_1ealj"]
+[ext_resource type="PackedScene" uid="uid://dtnk4rhd3vgqj" path="res://scenes/shield.tscn" id="3_a62es"]
+[ext_resource type="PackedScene" uid="uid://b8wijjopyqnim" path="res://scenes/stay away.tscn" id="4_k4vtj"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_a62es"]
 
@@ -34,6 +34,5 @@ shape = SubResource("RectangleShape2D_how3p")
 [node name="Area2D" parent="." unique_id=249375216 instance=ExtResource("3_a62es")]
 position = Vector2(20, 9)
 
-[node name="Area2D2" parent="." unique_id=1170031772 instance=ExtResource("4_yfqcd")]
-position = Vector2(20, -31)
-scale = Vector2(3, 3)
+[node name="stay_away" parent="." unique_id=1170031772 instance=ExtResource("4_k4vtj")]
+position = Vector2(19.999992, -45.999992)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmmwyyqm52yj4"
-path="res://.godot/imported/shiel.png-560e596441acf3046d3834b42e841812.ctex"
+uid="uid://ndlbksm5vtjq"
+path="res://.godot/imported/enemy_shot.png-bee32e4b5e180b6325900ebac2994e89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://shiel.png"
-dest_files=["res://.godot/imported/shiel.png-560e596441acf3046d3834b42e841812.ctex"]
+source_file="res://sprites/enemy_shot.png"
+dest_files=["res://.godot/imported/enemy_shot.png-bee32e4b5e180b6325900ebac2994e89.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ndlbksm5vtjq"
-path="res://.godot/imported/enemy_shot.png-00d79f2ef19eeab34e721e25e1fa8729.ctex"
+uid="uid://8tep7tx2xelf"
+path="res://.godot/imported/enemy_tank_muzzel.png-4989c21d75ac5818ed492c106ca3802d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemy_shot.png"
-dest_files=["res://.godot/imported/enemy_shot.png-00d79f2ef19eeab34e721e25e1fa8729.ctex"]
+source_file="res://sprites/enemy_tank_muzzel.png"
+dest_files=["res://.godot/imported/enemy_tank_muzzel.png-4989c21d75ac5818ed492c106ca3802d.ctex"]
 
 [params]
 

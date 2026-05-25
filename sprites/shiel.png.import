@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8tqh37a2i06t"
-path="res://.godot/imported/enemy_tank_body.png-ae9cdc019b2f584f13f71adb5d80ea33.ctex"
+uid="uid://dmmwyyqm52yj4"
+path="res://.godot/imported/shiel.png-42f39781e51a2d92185e1aedb5168ed7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemy_tank_body.png"
-dest_files=["res://.godot/imported/enemy_tank_body.png-ae9cdc019b2f584f13f71adb5d80ea33.ctex"]
+source_file="res://sprites/shiel.png"
+dest_files=["res://.godot/imported/shiel.png-42f39781e51a2d92185e1aedb5168ed7.ctex"]
 
 [params]
 
