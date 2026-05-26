@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://8tep7tx2xelf" path="res://sprites/enemy_tank_muzzel.png" id="3_mj5mm"]
 
 [sub_resource type="Curve" id="Curve_tnyut"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.0071971416), -2.6282568, 0.0, 0, 0]
+_data = [Vector2(0, 1), 0.0, -0.08094173, 0, 0, Vector2(1, 0.0071971416), -2.6282568, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ulso3"]

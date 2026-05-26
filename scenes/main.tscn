@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://cvv57gebis2fu" path="res://scripts/score_coutn.gd" id="3_h2yge"]
 
 [sub_resource type="Curve" id="Curve_sugp2"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.012395024), -2.8177485, 0.0, 0, 0]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.9909298, 1), 2.925321, 0.0, 0, 0]
 point_count = 2
 
 [node name="main" type="Node2D" unique_id=1234188863]

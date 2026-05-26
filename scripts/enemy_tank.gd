@@ -9,7 +9,7 @@ var max_score = 100
 var can_shoot = true
 var is_moving = true
 
-	
+
 func shoot():
 	if can_shoot == true:
 		var bullet_inst = enemy_bullet.instantiate()
@@ -17,9 +17,8 @@ func shoot():
 		bullet_inst.rotation = muzzel.rotation
 		get_tree().root.add_child(bullet_inst)
 		can_shoot = false
+		
 	var ratio = float(GlobalScore.score)/max_score
-	
-	
 	await  get_tree().create_timer(1 * time_curve.sample(ratio)).timeout
 	can_shoot = true
 
